@@ -1518,6 +1518,59 @@ Full documentation available at the end of this file.
             color: #666;
             font-size: 14px;
         }
+
+        /* ===== MOBILE SCROLL FIX ===== */
+        @media (max-width: 1024px) {
+            body {
+                justify-content: flex-start;
+                padding: 15px;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                overflow-y: auto;
+                min-height: 100vh;
+            }
+
+            #splashScreen {
+                overflow-y: auto;
+                align-items: flex-start;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+
+            .splash-container {
+                margin: 15px auto;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 15px;
+                gap: 15px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .options-area {
+                flex: none;
+                width: 100%;
+            }
+
+            .game-area {
+                width: 100%;
+                overflow-x: auto;
+            }
+
+            .command-area {
+                flex: none;
+                width: 100%;
+            }
+
+            #gameContainer {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
     </style>
 </head>
 <body>
