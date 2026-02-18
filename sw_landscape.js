@@ -1,4 +1,4 @@
-const CACHE = 'manie-v3-landscape';
+const CACHE = 'manie-v6';
 const FILES = [
   './ManieMalan_PWA_VI_6.html',
   './icon-512.png',
