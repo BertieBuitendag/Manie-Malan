@@ -1,0 +1,18 @@
+{
+  "name": "The Logical Adventures of Clever Manie Malan",
+  "short_name": "Manie Malan",
+  "description": "An educational coding game for Grade 4-5 learners",
+  "start_url": "./ManieMalan_PWA_VI_8_1.html",
+  "display": "standalone",
+  "background_color": "#006400",
+  "theme_color": "#006400",
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
