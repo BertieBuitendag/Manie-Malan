@@ -4966,14 +4966,14 @@ Full documentation available at the end of this file.
             spotlight.style.width = (rect.width + padding * 2) + 'px';
             spotlight.style.height = (rect.height + padding * 2) + 'px';
 
-            // Position bubble near spotlight
+            // Position bubble above spotlight
             const bubble = document.getElementById('tourBubble');
             const bubbleX = Math.min(rect.left, window.innerWidth - 360);
-            const bubbleY = rect.bottom + padding + 10;
+            const bubbleY = rect.top - padding - 120;
             
-            // If bubble would go off bottom, put it above
-            if (bubbleY + 120 > window.innerHeight) {
-                bubble.style.top = Math.max(5, rect.top - 130) + 'px';
+            // If bubble would go off top, put it below
+            if (bubbleY < 5) {
+                bubble.style.top = (rect.bottom + padding + 10) + 'px';
             } else {
                 bubble.style.top = bubbleY + 'px';
             }
