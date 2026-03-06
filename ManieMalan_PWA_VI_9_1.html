@@ -5344,6 +5344,8 @@ Full documentation available at the end of this file.
         window.addEventListener('DOMContentLoaded', function() {
             currentLanguage = 'en';
             updateSplashText();
+           // Hide close button in browser — only works in standalone/PWA mode
+           if (!isRunningStandalone()) document.getElementById('closeAppBtn').style.display = 'none';
         });
     </script>
 </body>
